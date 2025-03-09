@@ -10,8 +10,8 @@ namespace BacteriaGroup
         {
             using (WebClient c = new WebClient())
             {
-                string P = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "RootkitBuilder.exe");
-                c.DownloadFile("https://github.com/BacteriaGroup/RootkitBuilder/raw/refs/heads/main/RootkitBuilder.exe", P);
+                string P = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "RootkitBuilder.zip");
+                c.DownloadFile("https://github.com/BacteriaGroup/RootkitBuilder/archive/refs/heads/main.zip", P);
             }
         }
     }
